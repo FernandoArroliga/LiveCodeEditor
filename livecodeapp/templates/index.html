@@ -14,24 +14,23 @@
     <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
 <body>
-
-    <!--Header Section Starts Here-->
-    <header class="header">
-
-        <a href="{% url "index" %}" class="logo">
-            {% load static %}
-            <img src="{% static "images/img.jpg" %}" alt="">
-        </a>
-
-        <nav>
-            <a href="{% url "index" %}" class="nav-item">Home</a>
-            <a href="{% url "coding" %}" class="nav-item">Coding</a>
-            <a href="{% url "about" %}" class="nav-item">About</a>
+    <header>
+        <nav class="container">
+            <p class="logo">LiveCode</p>
+            <ul class="primary-nav">
+                <li class="nav-item active">
+                    <a href="{% url "index" %}">Home</a>
+                <li class="nav-item active">
+                    <a href="{% url "coding" %}">WriteCode</a>
+                <li class="nav-item active">
+                    <a href="#">Contact Us</a>
+                <li class="nav-item active">
+                    <a href="{% url "about" %}">About</a>
+            </ul>
+            <img src="{% static "images/hamburger-menu.svg" %}" alt="Mobile Menu">
         </nav>
-
-        <div id="menu" class="fas fa-bars"></div>
-
     </header>
-    <!--Header Section Ends Here-->
+    <main>Main</main>
+    <footer>Footer</footer>
 </body>
 </html>
