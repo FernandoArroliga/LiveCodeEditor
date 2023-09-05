@@ -1,5 +1,9 @@
+// Homepage events
 var menuList = document.getElementById("menuList");
+var docsButton = document.getElementById("docsButton");
+var codeButton = document.getElementById("codeButton")
 
+// Function for menuList
 menuList.style.maxHeight = "0px";
 
 function togglemenu(){
@@ -14,9 +18,12 @@ function togglemenu(){
         }
 }
 
-
-var docsButton = document.getElementById("docsButton");
-
+// Function for docsButton
 docsButton.addEventListener("click", function() {
-    window.location.href = "docs.html";
+    window.location.href = "docs";
+});
+
+// Function for start button
+codeButton.addEventListener("click", function() {
+    window.location.href = "coding";
 });

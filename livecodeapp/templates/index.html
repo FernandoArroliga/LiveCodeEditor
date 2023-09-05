@@ -20,7 +20,7 @@
                     <li><a href="{% url "index" %}">Home</a></li>
                     <li><a href="{% url "coding" %}">Code</a></li>
                     <li><a href="{% url "about" %}">About</a></li>
-                    <li><a href="#">Docs</a></li>
+                    <li><a href="{% url "docs" %}">Docs</a></li>
                 </ul>
             </nav>
             <img src="{% static "images/Playstation_Img/menu.png" %}" class="menu-icon" onclick="togglemenu()">
@@ -31,7 +31,7 @@
                 <h3>Online editor for programming in</h3>
                 <p>CSS/HTML and</p>
                 <h4>JavaScript</h4>
-                <button type="button">Code Now<img src="{% static "images/Playstation_Img/arrow.png" %}"></button>
+                <button id="codeButton" type="button">Code Now<img src="{% static "images/Playstation_Img/arrow.png" %}"></button>
             </div>
             <div class="col-2">
                 <img src="{% static "images/Playstation_Img/controller.png" %}" class="controller">
