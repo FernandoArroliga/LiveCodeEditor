@@ -13,3 +13,10 @@ function togglemenu(){
             menuList.style.maxHeight = "0px";
         }
 }
+
+
+var docsButton = document.getElementById("docsButton");
+
+docsButton.addEventListener("click", function() {
+    window.location.href = "docs.html";
+});
