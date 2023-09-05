@@ -1,1 +1,35 @@
-<h1>Website Developed by ......</h1>
+<!--Load Static files-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live CodeEditor</title>
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+
+    <!--Font Awesone link-->
+    <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>About This Project</h1>
+            <p class="text">
+                Este proyecto fue realizado con el fin de mostrar los diferentes usos de los lenguajes de
+                programación web más comunes del mercado como lo son: css, html y javaScript.
+            </p>
+            <div class="Skills">
+                <span>CSS</span>
+                <span>HTML</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
