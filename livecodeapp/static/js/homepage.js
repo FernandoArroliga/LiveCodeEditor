@@ -1,7 +1,8 @@
 // Homepage events
 var menuList = document.getElementById("menuList");
 var docsButton = document.getElementById("docsButton");
-var codeButton = document.getElementById("codeButton")
+var codeButton = document.getElementById("codeButton");
+var logoButton = document.getElementById("logo");
 
 // Function for menuList
 menuList.style.maxHeight = "0px";
@@ -26,4 +27,9 @@ docsButton.addEventListener("click", function() {
 // Function for start button
 codeButton.addEventListener("click", function() {
     window.location.href = "coding";
+});
+
+// Function for logoButton
+logoButton.addEventListener("click", function(){
+    window.location.href = "index";
 });
