@@ -10,3 +10,6 @@ def coding(request):
 
 def about(request):
     return render(request, "about.html")
+
+def docs(request):
+    return render(request, "docs.html")
