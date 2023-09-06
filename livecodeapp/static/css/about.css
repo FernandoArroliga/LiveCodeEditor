@@ -79,6 +79,10 @@ button:hover {
     cursor: pointer;
 }
 
+.button a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1180px) {
     .about {
         width: 100%;
