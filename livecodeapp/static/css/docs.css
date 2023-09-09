@@ -15,7 +15,7 @@ body {
     width: 75%;
     margin: 75px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 25px;
 }
 
@@ -26,4 +26,73 @@ body {
 
 .image-section {
     min-height: 250px;
+}
+
+.card .img-one {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card .img-two {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card .img-three {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Images Sizes */
+
+.html-logo {
+    width: 200px;
+    height: 300px;
+}
+
+.css-logo {
+    width: 200px;
+    height: 300px;
+}
+
+.js-logo {
+    width: 200px;
+    height: 300px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.content h2 {
+    letter-spacing: 2px;
+    color: #c9c9c9;
+}
+
+.content p {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin: 15px 0px;
+}
+
+.content a {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: 2px;
+    display: inline-block;
+    background-color: #d6c954;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content a:hover {
+    background-color: #87803d;
+    transition: 1s ease;
 }
