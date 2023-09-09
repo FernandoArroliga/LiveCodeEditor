@@ -13,3 +13,12 @@ def about(request):
 
 def docs(request):
     return render(request, "docs.html")
+
+def html_docs(request):
+    return render(request, "html_docs.html")
+
+def css_docs(request):
+    return render(request, "css_docs.html")
+
+def js_docs(request):
+    return render(request, "js_docs.html")
