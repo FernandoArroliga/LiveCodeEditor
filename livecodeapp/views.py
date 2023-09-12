@@ -22,3 +22,6 @@ def css_docs(request):
 
 def js_docs(request):
     return render(request, "js_docs.html")
+
+def credits(request):
+    return render(request, "credits.html")
