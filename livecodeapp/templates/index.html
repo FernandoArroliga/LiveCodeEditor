@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live CodeEditor</title>
-    
+
     <!--Font Awesone link-->
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
     
@@ -15,14 +15,14 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <p class="logo">LiveCode</p>
+            <a href="">
+                <p class="logo">LiveCode</p>
+            </a>
             <nav>
                 <ul id="menuList">
-                    <li><a href="{% url "index" %}">Home</a></li>
-                    <li><a href="{% url "coding" %}">Code</a></li>
-                    <li><a href="{% url "about" %}">About</a></li>
                     <li><a href="{% url "docs" %}">References</a></li>
-                    <li><a href="{% url "docs" %}">Credits</a></li>
+                    <li><a href="{% url "about" %}">About</a></li>
+                    <li><a href="{% url "credits" %}">Credits</a></li>
                 </ul>
             </nav>
             <img src="{% static "images/menu.png" %}" class="menu-icon" onclick="togglemenu()">
