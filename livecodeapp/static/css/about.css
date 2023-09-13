@@ -64,7 +64,9 @@
 }
 
 button {
-    background-color: #c0c4d6;
+    /*background-color: #c0c4d6;
+    color: #454545;*/
+    background: #fff;
     color: #454545;
     border: 2px solid transparent;
     text-decoration: none;
