@@ -29,6 +29,10 @@
     color: #119ecc;
 }
 
+.home {
+    text-decoration: none;
+}
+
 .menu-icon {
     width: 25px;
     cursor: pointer;
