@@ -20,32 +20,137 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Aug 7, 2023</h5>
+                <h2>HTML Fundamentals: The Language of the Web
+                </h2>
                 <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
+                <p>
+                    HTML (HyperText Markup Language) is the fundamental language used to create web 
+                    pages. If you're interested in web development, it's essential to grasp the basics of 
+                    HTML. In this article, we'll guide you through the fundamentals of HTML, its basic 
+                    syntax, and its primary uses.
+                </p>
+                <h2>What is HTML?</h2>
+                <p>
+                    HTML is a markup language used to structure the content of a web page. It allows you 
+                    to define elements and tags that dictate how information should be presented in a web 
+                    browser. HTML serves as the skeleton of a web page, providing the necessary structure 
+                    and organization to display text, images, links, and other multimedia elements.
+                </p>
+                <h2>Basic HTML Syntax</h2>
+                <p>
+                    HTML uses tags to define elements and structure. Each tag is enclosed within angle 
+                    brackets, like &lt;tag&gt;. Each element consists of an opening tag &lt;tag&gt; and a 
+                    closing tag &lt;/tag&gt;.
+                </p>
+                <p>
+                    HTML also uses attributes to provide additional information about elements. 
+                    Attributes are placed inside the opening tag and are used to control the behavior 
+                    or appearance of the element. Here's an example showing the use of an "src" 
+                    attribute for an image: &lt;img src="image.jpg" alt="Image description"&gt;
+                </p>
+                <h2>Primary Uses of HTML</h2>
+                <p>
+                    HTML is used to create the basic structure of a web page. 
+                    Some of the most common HTML elements include:
+                </p>
+                <p><strong>&lt;html&gt;:</strong> Defines the beginning and end of the HTML document.</p>
+                <p><strong>&lt;head&gt;:</strong> Contains metadata, such as the page title and links to style sheets.</p>
+                <p><strong>&lt;body&gt;:</strong> Contains the visible content of the page, including text, images, and links.</p>
+                <p><strong>&lt;p&gt;:</strong> Defines a paragraph of text.</p>
+                <p><strong>&lt;a&gt;:</strong> Creates links to other web pages or resources.</p>
+                <p><strong>&lt;img&gt;:</strong> Inserts images into the page.</p>
+                <p><strong>&lt;ul&gt; and &lt;ol&gt;:</strong> Create unordered and ordered lists, respectively.</p>
+                <p>More html tags:</p>
+                <ul>
+                    <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Define headers of different levels.</li>
+                    <li><strong>&lt;div&gt;:</strong> Groups elements and is used for applying styles or scripts.</li>
+                    <li><strong>&lt;span&gt;:</strong> Allows styling or scripting inline portions of text.</li>
+                    <li><strong>&lt;table&gt;:</strong> Defines a table.</li>
+                    <li><strong>&lt;tr&gt;:</strong> Defines a row in a table.</li>
+                    <li><strong>&lt;td&gt;:</strong> Defines a data cell in a table.</li>
+                    <li><strong>&lt;th&gt;:</strong> Defines a header cell in a table.</li>
+                    <li><strong>&lt;ul&gt;:</strong> Creates an unordered list.</li>
+                    <li><strong>&lt;ol&gt;:</strong> Creates an ordered list.</li>
+                    <li><strong>&lt;li&gt;:</strong> Defines a list item within an unordered or ordered list.</li>
+                    <li><strong>&lt;form&gt;:</strong> Defines an interactive form.</li>
+                    <li><strong>&lt;input&gt;:</strong> Creates an input field in a form.</li>
+                    <li><strong>&lt;textarea&gt;:</strong> Creates a text area in a form.</li>
+                    <li><strong>&lt;button&gt;:</strong> Creates a button in a form.</li>
+                    <li><strong>&lt;label&gt;:</strong> Labels an element in a form.</li>
+                    <li><strong>&lt;select&gt;:</strong> Creates a dropdown list in a form.</li>
+                    <li><strong>&lt;option&gt;:</strong> Defines an option within a dropdown list.</li>
+                </ul>
+                <p>
+                    These are just a few examples of basic HTML tags, but there are many more to suit 
+                    various needs.
+                </p>
+                  
+                <h2>The Basic Structure of an HTML Page</h2>
+                <p>
+                    Every HTML web page follows a fundamental structure consisting of several key 
+                    elements. Here's the basic structure of an HTML page:
+                </p>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;!-- Page content goes here --&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+
+                <h2>Conclusion</h2>
+                <p>
+                    In summary, HTML is the fundamental language for creating web pages. It provides the 
+                    structure and organization needed to effectively present content in a web browser. 
+                    As you delve deeper into web development, you'll learn how to combine HTML with 
+                    other languages like CSS and JavaScript to create dynamic and appealing websites.
+                </p>
             </div>
         </div>
+
         <div class="rightcolumn">
             <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+                <!--More information section-->
+
+                <h3>More Information</h3>
+        <!--        <div class="fakeimg" style="height:100px;">Image</div> -->
+                <p>If you want to know more about html tags, you can visit:</p>
+                <p>
+                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank">W3C Documentation</a>
+                </p>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Documentation</a>
+                </p>
             </div>
+
+            <!--More tutorials section-->
+
             <div class="card">
                 <h3>More Tutorials</h3>
-                <div class="fakeimg"><a href="{% url "html_docs" %}">Html tutorial</a></div><br>
                 <div class="fakeimg"><a href="{% url "css_docs" %}">Css tutorial</a></div><br>
                 <div class="fakeimg"><a href="{% url "js_docs" %}">Js tutorial</a></div>
             </div>
+
+            <!--Follow me section-->
+
             <div class="card">
                 <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
             </div>
         </div>
     </div>
-      
-    <div class="footer">Footer</div>
+
+    <!--Footer Content-->  
+    <div class="footer">
+        <p>&copy; 2023 Personal Website. All rights reserved.</p>
+    </div>
+    
 </body>
 
 </html>
