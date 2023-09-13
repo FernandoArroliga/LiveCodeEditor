@@ -21,6 +21,10 @@ body {
     /* background: white; */
     background: #454545;
 }
+
+.header h2 {
+    color: #fff;
+} 
   
 /* Create two unequal columns that floats next to each other */
 /* Left column */
