@@ -50,7 +50,109 @@
                             color: blue;
                         }
                     </pre>
-                </p>                
+                </p>   
+                <p>
+                    In this example, "p" is the selector targeting all paragraphs on the page, 
+                    "color" is the property setting the text color, and "blue" is the assigned value.
+                </p> 
+                
+                <h2>Applying Styles:</h2>
+                <p>
+                    To apply CSS styles, you can use external files, internal styles, or even 
+                    inline styles. Here's how to link an external CSS file in your HTML document:
+                </p>
+                <p>
+                    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+                </p>
+
+                <h2>Selectors:</h2>
+                <p>
+                    Selectors are patterns that specify which elements styles will be 
+                    applied to. Some common selector examples include:
+                </p>
+                <ul>
+                    <li><strong>Element Selector:</strong> "p" selects all paragraphs on the page.</li>
+                    <li><strong>Class Selector:</strong> ".button" selects all elements with the "button" class.</li>
+                    <li><strong>ID Selector:</strong> "#header" selects the element with the ID "header."</li>
+                </ul>
+
+                <h2>Common Properties and Values:</h2>
+                <p>
+                    CSS offers a wide variety of properties and values to control the appearance of HTML 
+                    elements. Some common properties include:
+                </p>
+                <ul>
+                    <li><strong>color:</strong> Defines the text color.</li>
+                    <li><strong>font-size:</strong> Sets the font size.</li>
+                    <li><strong>margin:</strong> The space outside an element.</li>
+                    <li><strong>padding:</strong> The space inside an element.</li>
+                </ul>
+                <p>Example:</p>
+                <p>
+                    <pre>
+                        h1 {
+                            color: #333;
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                            padding: 10px;
+                        }                        
+                    </pre>
+                </p> 
+
+                <h2>Box Models:</h2>
+                <p>
+                    The CSS box model refers to the space around and inside an 
+                    element. Each element has four parts: margin, border, padding, and content.
+                </p>
+                <p>
+                    <pre>
+                        .box {
+                            margin: 10px;
+                            border: 1px solid #ccc;
+                            padding: 20px;
+                        }                        
+                    </pre>
+                </p>
+
+                <h2>Colors and Fonts:</h2>
+                <p>
+                    You can define colors using names, hexadecimal codes, or RGB values. 
+                    Similarly, you can specify fonts for your text.
+                </p>
+                <p>
+                    <pre>
+                        a {
+                            color: #0073e6;
+                            font-family: "Arial", sans-serif;
+                        }                        
+                    </pre>
+                </p>
+
+                <h2>Responsive Design:</h2>
+                <p>
+                    Responsive design is crucial in modern web design. It uses media 
+                    queries to adapt the layout to different screen sizes. For example:
+                </p>
+                <p>
+                    <pre>
+                        @media (max-width: 768px) {
+
+                            /* Styles for small screens */
+
+                            body {
+                                font-size: 16px;
+                            }
+                        }                        
+                    </pre>
+                </p>
+
+                <h2>Conclusion:</h2>
+                <p>
+                    With this basic CSS guide, you've taken your first steps 
+                    into the exciting world of web design. CSS is a powerful tool for controlling 
+                    the appearance of your websites, and mastering its fundamentals will 
+                    allow you to create more attractive and functional web experiences.
+                </p>
             </div>
         </div>
 
@@ -61,6 +163,12 @@
 
                 <h3>More Information</h3>
                 <p>If you want to know more about html tags, you can visit:</p>
+                <p>
+                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank">W3C Documentation</a>
+                </p>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Documentation</a>
+                </p>
             </div>
 
             <div class="card">
@@ -76,7 +184,10 @@
 
             <div class="card">
                 <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <p>
+                    <a href="https://github.com/FernandoArroliga" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </p>
             </div>
 
         </div>
