@@ -29,9 +29,10 @@
     color: #119ecc;
 }
 
-.home {
-    text-decoration: none;
+a#home.logo {
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
+
 
 .menu-icon {
     width: 25px;
