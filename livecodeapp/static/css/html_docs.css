@@ -10,7 +10,7 @@ body {
     font-family: Arial;
     padding: 20px;
     /*background: #f1f1f1; */
-    background: #454545;
+    background: white;
 }
   
 /* Header/Blog Title */
@@ -19,7 +19,7 @@ body {
     font-size: 40px;
     text-align: center;
     /* background: white; */
-    background: #454545;
+    background: #ba29da;
 }
 
 .header h2 {
@@ -27,6 +27,7 @@ body {
 } 
   
 /* Create two unequal columns that floats next to each other */
+
 /* Left column */
 .leftcolumn {
     float: left;
@@ -42,18 +43,29 @@ body {
   
 /* Fake image */
 .fakeimg {
-    background-color: #aaa;
+    background-color: #ba29da;
     width: 100%;
     padding: 20px;
-}
-  
+    color: white;
+} 
+
 /* Add a card effect for articles */
 .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-  }
+}
+
+/* Delete link effect */
+.card a {
+    text-decoration: none;
+}
   
+/* Change background icon color */
+.card .fa-brands {
+    color: black;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -65,9 +77,9 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    color: #fff;
     margin-top: 20px;
-    background: #454545;
+    background: #ba29da;
 }
 
   
