@@ -14,16 +14,18 @@
 
 </head>
 <body>
+
+    <!--Header-->
     <div class="header">
         <h2>HTML5 Tutorial</h2>
     </div>
       
     <div class="row">
         <div class="leftcolumn">
+
+            <!--Main content-->
             <div class="card">
-                <h2>HTML Fundamentals: The Language of the Web
-                </h2>
-                <div class="fakeimg" style="height:200px;">Image</div>
+                <h2>HTML Fundamentals: The Language of the Web</h2>
                 <p>
                     HTML (HyperText Markup Language) is the fundamental language used to create web 
                     pages. If you're interested in web development, it's essential to grasp the basics of 
@@ -99,7 +101,7 @@
                         &lt;title&gt;Page Title&lt;/title&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                        &lt;!-- Page content goes here --&gt;
+                        &lt;!-- Page content --&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
                 </pre>
@@ -112,41 +114,43 @@
                     other languages like CSS and JavaScript to create dynamic and appealing websites.
                 </p>
             </div>
+
         </div>
 
         <div class="rightcolumn">
-            <div class="card">
 
-                <!--More information section-->
-
-                <h3>More Information</h3>
+            <!--More information section-->
+            <div class="card" style="background: #ba29da;">  
+                <h3 style="color: white;">More Information</h3>
         <!--        <div class="fakeimg" style="height:100px;">Image</div> -->
                 <p>If you want to know more about html tags, you can visit:</p>
                 <p>
-                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank">W3C Documentation</a>
+                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank" style="color: white;">W3C Documentation</a>
                 </p>
                 <p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Documentation</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" style="color: white;">Mozilla Documentation</a>
                 </p>
             </div>
 
             <!--More tutorials section-->
 
-            <div class="card">
+            <div class="card" style="background: #ba29da; color: white;">
                 <h3>More Tutorials</h3>
-                <div class="fakeimg"><a href="{% url "css_docs" %}">Css tutorial</a></div><br>
-                <div class="fakeimg"><a href="{% url "js_docs" %}">Js tutorial</a></div>
-            </div>
-
+                <div class="fakeimg"><a href="{% url "css_docs" %}" style="color: black;">Css tutorial</a></div><br>
+                <div class="fakeimg"><a href="{% url "js_docs" %}" style="color: black;">Js tutorial</a></div>
+           </div>
+ 
             <!--Follow me section-->
 
-            <div class="card">
+            <div class="card" style="background: #ba29da; color: white;">
                 <h3>Follow Me</h3>
                 <p>
                     <a href="https://github.com/FernandoArroliga" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>                    
                 </p>
             </div>
+            
         </div>
     </div>
 
@@ -158,3 +162,6 @@
 </body>
 
 </html>
+
+
+
