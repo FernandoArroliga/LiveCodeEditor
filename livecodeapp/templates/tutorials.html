@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveCode</title>
+
+    <link rel="stylesheet" href="{% static "css/cards.css" %}">
+</head>
+<body>
+    <div class="card-container">
+        
+        <!--Card One-->
+        <div class="card">
+            <!--<img src="{% static "images/html_logo.png" %}" alt="">-->
+            <div class="card-content">
+                <h1>HTML Tutorial</h1>
+                 <p>
+                   A short, basic tutorial to learn the basics and syntax of HTML.
+                </p>
+                <a href="#" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <!--Card Two-->
+        <div class="card">
+            <!--<img src="{% static "images/css_logo.png" %}" alt="">-->
+            <div class="card-content">
+                <h1>CSS Tutorial</h1>
+                 <p>
+                   A short, basic tutorial to learn the basics and syntax of Css.
+                </p>
+                <a href="#" class="card-button">Read More</a>
+            </div>
+        </div>
+
+        <!--Card Three-->
+        <div class="card">
+            <!--<img src="{% static "images/JavaScript_logo.png" %}" alt="">-->
+            <div class="card-content">
+                <h1>JavaScript Tutorial</h1>
+                 <p>
+                   A short, basic tutorial to learn the basics and syntax of JavaScript.
+                </p>
+                <a href="#" class="card-button">Read More</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
