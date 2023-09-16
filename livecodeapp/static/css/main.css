@@ -1,12 +1,14 @@
 /* Font family from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Open+Sans:wght@800&family=Playfair+Display:wght@500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,700&family=Quicksand:wght@400;500;600;700&display=swap');
 
+/* Default Configuration */
 * {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
 
+/* Main Container */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -16,6 +18,7 @@
     overflow: hidden;
 }
 
+/* Navigation Section */
 .navbar {
     width: 100%;
     display: flex;
@@ -56,12 +59,15 @@ nav ul li a:hover {
     color: #ba29da;
 }
 
+/* Main Content */
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 100px 0;
 }
+
+/* Left Column */
 
 .col-1 {
     flex-basis: 40%;
@@ -91,6 +97,7 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
+/* Code Button */
 button {
     width: 140px;
     border: 0;
@@ -129,6 +136,7 @@ button:hover {
     top: 8px;
 }
 
+/* Right Column */
 .col-2 {
     position: relative;
     flex-basis: 60%;
@@ -136,7 +144,7 @@ button:hover {
     align-items: center;
 }
 
-.col-2 .controller {
+.col-2 .background {
     width: 90%;
 }
 
@@ -152,6 +160,7 @@ button:hover {
     transform: translateX(150px);
 }
 
+/* Tutorials Button */
 .add-btn img {
     width: 35px;
     margin-bottom: 5px;
@@ -163,12 +172,14 @@ button:hover {
     cursor: pointer;
 }
 
+/* Social Lnks Section */
 .social-links i {
     height: 13px;
     margin: 20px;
     cursor: pointer;
 }
 
+/* Media Queries */
 @media only screen and (max-width:700px){
     
     nav ul {
@@ -209,7 +220,7 @@ button:hover {
         margin-bottom: 50px;
     }
 
-    .col-2 .controller {
+    .col-2 .background {
         width: 77%;
     }
 
