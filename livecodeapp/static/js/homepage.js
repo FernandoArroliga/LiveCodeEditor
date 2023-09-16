@@ -20,7 +20,7 @@ function togglemenu(){
 
 // Function for docsButton
 docsButton.addEventListener("click", function() {
-    window.location.href = "docs";
+    window.location.href = "tutorials";
 });
 
 // Function for start button
