@@ -1,33 +1,57 @@
-{% load static %}
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Meta Information-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live CodeEditor</title>
 
-    <!--Font Awesone link-->
+    <!--Title of the Page-->
+    <title>Live Code Editor</title>
+
+    <!-- Autor: Fernando Arroliga -->
+    <!-- Creation Date: March 20, 2023 -->
+
+    <!--Font Awesone Link-->
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
     
-    <!--CSS Styles-->
+    <!--Css Styles-->
     <link rel="stylesheet" href="{% static "css/main.css" %}">
+
 </head>
+
 <body>
+
+    <!-- Main Container -->
     <div class="container">
+
+        <!-- Navigation Bar -->
         <div class="navbar">
+
+            <!-- Logo Link -->
             <a id="home" href="{% url "index" %}" style="text-decoration: none;">
                 <p class="logo">LiveCode</p>
             </a>
+
+            <!-- Navigation Menu -->
             <nav>
                 <ul id="menuList">
-                    <li><a href="{% url "docs" %}">References</a></li>
+                    <li><a href="{% url "docs" %}">Tutorials</a></li>
                     <li><a href="{% url "about" %}">About</a></li>
                     <li><a href="{% url "credits" %}">Credits</a></li>
                 </ul>
             </nav>
+
+            <!-- Menu Icon -->
             <img src="{% static "images/menu.png" %}" class="menu-icon" onclick="togglemenu()">
+
         </div>
+        
+        <!-- Main Information -->
         <div class="row">
+
+            <!-- Left Column -->
             <div class="col-1">
                 <h2>Live Code<br>Editor</h2>
                 <h3>Online web code editor</h3>
@@ -35,21 +59,32 @@
                 <h4>JavaScript</h4>
                 <button id="codeButton" type="button">Code Now<img src="{% static "images/arrow.png" %}"></button>
             </div>
+
+            <!-- Right Column -->
             <div class="col-2">
-                <img src="{% static "images/background04.jpg" %}" class="controller">
+                <!-- Background Image -->
+                <img src="{% static "images/background04.jpg" %}" class="background">
                 <div class="color-box"></div>
                 <div class="add-btn">
+                    <!-- Tutorials Button -->
                     <img id="docsButton" src="{% static "images/add.png" %}">
-                    <p><small>References</small></p> 
+                    <p><small>Tutorials</small></p> 
                 </div>
             </div>
+
         </div>
+
+        <!-- Social Links -->
         <div class="social-links">
             <a href="https://github.com/FernandoArroliga" class="social-icon" target="_blank" style="color: black;"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
+            <a href="https://www.linkedin.com/in/fernando-arroliga-460073284" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin" style="color: black;"></i></a>
             <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-square-instagram" style="color: black;"></i></a>                    
         </div>
+
     </div>
+
+    <!-- JavaScript Code -->
     <script src="{% static "js/homepage.js" %}"></script>
+
 </body>
 </html>
