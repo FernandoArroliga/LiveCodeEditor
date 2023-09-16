@@ -10,4 +10,5 @@ urlpatterns = [
     path("css_docs/", views.css_docs, name="css_docs"),
     path("js_docs/", views.js_docs, name="js_docs"),
     path("credits/", views.credits, name="credits"),
+    path("tutorials/", views.tutorials, name="tutorials"),
 ]
