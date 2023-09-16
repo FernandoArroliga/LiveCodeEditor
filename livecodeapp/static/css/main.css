@@ -144,7 +144,7 @@ button:hover {
     align-items: center;
 }
 
-.col-2 .background {
+.col-2 .controller {
     width: 90%;
 }
 
@@ -220,7 +220,7 @@ button:hover {
         margin-bottom: 50px;
     }
 
-    .col-2 .background {
+    .col-2 .controller {
         width: 77%;
     }
 
