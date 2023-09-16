@@ -60,6 +60,17 @@ body {
 .card a {
     text-decoration: none;
 }
+
+/* link effects */
+.doc-link:hover {
+    color: #ba29da;
+    text-decoration: underline;
+}
+
+.fakeimg:hover {
+    color: #ba29da;
+    text-decoration: underline;
+}
   
 /* Change background icon color */
 .card .fa-brands {
