@@ -7,3 +7,38 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 340px;
+    width: 250px;
+    position: relative;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: "Lobster", cursive;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front {
+    background: linear-gradient(#ba29da, #d983ec);
+}
+
+.back {
+    background: linear-gradient(#ba29da, #d983ec);
+}
+
