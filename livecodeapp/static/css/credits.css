@@ -48,7 +48,7 @@ body {
 }
 
 .back {
-    background-color: #3a3a3a;
+    background-color: #ba29da;
     transform: rotateY(180deg) rotateZ(180deg);
     display: flex;
     flex-direction: column;
@@ -58,6 +58,11 @@ body {
 }
 
 .front {
+    background-color: #ba29da;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
