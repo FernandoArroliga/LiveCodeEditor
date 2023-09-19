@@ -10,35 +10,25 @@
 
 body {
     height: 100vh;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #454545;
+    color: rgb(211, 211, 211);
+}
+
+.container {
+    width: 350px;
+    height: 500px;
 }
 
 .card {
-    height: 340px;
-    width: 250px;
-    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .front,
 .back {
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    font-family: "Lobster", cursive;
-    border-radius: 10px;
-    position: absolute;
-}
-
-.front {
-    background: linear-gradient(#ba29da, #d983ec);
-}
-
-.back {
-    background: linear-gradient(#ba29da, #d983ec);
 }
 
