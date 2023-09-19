@@ -4,24 +4,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CSS Styles-->
+    <!-- Title of the Page -->
+    <title>about</title>
+
+    <!-- Author: Fernando Arroliga -->
+    <!-- Creation Date: March 20, 2023 -->
+
+    <!-- Css Styles -->
     <link rel="stylesheet" href="{% static "css/about.css" %}">
 
-    <!--Font Awesone link-->
+    <!-- Font Awesone Link -->
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
 
-    <title>Live CodeEditor</title>
 </head>
 
 <body>
+
+    <!-- Main Section -->
     <section class="about">
+
+        <!-- Content Container -->
         <div class="content">
+            <!-- background image -->
             <img src="{% static "images/about01.png" %}">
+
+            <!-- Text Container -->
             <div class="text">
-                <h2>About this project</h2>
+                <h3>About this project</h3>
                 <h5>Open Source Project</h5>
                 <p>
                     Welcome to the "Live CodeEditor" project! This initiative was conceived with the primary 
@@ -31,7 +45,9 @@
                 </p>
                 <button class="button"><a href="{% url "index" %}">HomePage</a></button>
             </div>
+
         </div>
+
     </section>
 
 </body>
