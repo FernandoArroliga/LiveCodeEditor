@@ -2,9 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Code</title>
+
+    <!-- Title of the Page -->
+    <title>Html Tutorial</title>
+
+    <!-- Author: Fernando Arroliga -->
+    <!-- Creation Date: March 29, 2023 -->
 
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
@@ -13,18 +20,23 @@
     <link rel="stylesheet" href="{% static "css/html_docs.css" %}">
 
 </head>
+
 <body>
 
-    <!--Header-->
+    <!-- Header Text -->
     <div class="header">
         <h2>HTML5 Tutorial</h2>
     </div>
-      
+    
+    <!-- Main Container -->
     <div class="row">
+
+        <!-- Left Column -->
         <div class="leftcolumn">
 
             <!--Main content-->
             <div class="card">
+                <!-- content -->
                 <h2>HTML Fundamentals: The Language of the Web</h2>
                 <p>
                     HTML (HyperText Markup Language) is the fundamental language used to create web 
@@ -113,16 +125,18 @@
                     As you delve deeper into web development, you'll learn how to combine HTML with 
                     other languages like CSS and JavaScript to create dynamic and appealing websites.
                 </p>
+
             </div>
 
         </div>
 
+        <!-- Right Column -->
         <div class="rightcolumn">
 
             <!--More information section-->
-            <div class="card" style="background: #ba29da;">  
+            <div class="card" style="background: #ba29da;">
+                <!-- content -->
                 <h3 style="color: white;">More Information</h3>
-        <!--        <div class="fakeimg" style="height:100px;">Image</div> -->
                 <p>If you want to know more about html tags, you can visit:</p>
                 <p>
                     <a class="doc-link" href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank" style="color: white;">W3C Documentation</a>
@@ -130,28 +144,32 @@
                 <p>
                     <a class="doc-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" style="color: white;">Mozilla Documentation</a>
                 </p>
+
             </div>
 
             <!--More tutorials section-->
-
             <div class="card" style="background: #ba29da; color: white;">
+                <!-- content -->
                 <h3>More Tutorials</h3>
-                <div class="fakeimg"><a href="{% url "css_docs" %}" style="color: black;">Css tutorial</a></div><br>
-                <div class="fakeimg"><a href="{% url "js_docs" %}" style="color: black;">Js tutorial</a></div>
-           </div>
+                <div class="fakeimg"><a style="color: white;" href="{% url "css_docs" %}" style="color: black;">Css tutorial</a></div><br>
+                <div class="fakeimg"><a style="color: white;" href="{% url "js_docs" %}" style="color: black;">JavaScript tutorial</a></div>
+           
+            </div>
  
             <!--Follow me section-->
-
             <div class="card" style="background: #ba29da; color: white;">
+                <!-- content -->
                 <h3>Follow Me</h3>
                 <p>
                     <a href="https://github.com/FernandoArroliga" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-arroliga-460073284" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>                    
                 </p>
+
             </div>
             
         </div>
+
     </div>
 
     <!--Footer Content-->  
