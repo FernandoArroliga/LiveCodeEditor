@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
     
     <!--Css Styles-->
-    <link rel="stylesheet" href="{% static "css/main.css" %}">
+	<link href="{% static "css/style.css" %}" rel="stylesheet" />
 
 </head>
 
@@ -47,7 +47,6 @@
             <img src="{% static "images/menu.png" %}" class="menu-icon" onclick="togglemenu()">
 
         </div>
-        
         <!-- Main Information -->
         <div class="row">
 
@@ -58,21 +57,7 @@
                 <p>css/html</p>
                 <h4>JavaScript</h4>
                 <button id="codeButton" type="button">Code Now<img src="{% static "images/arrow.png" %}"></button>
-            </div>
-
-            <!-- Right Column -->
-            <div class="col-2">
-                <!-- Background Image -->
-                <img src="{% static "images/background04.jpg" %}" class="controller">
-                <div class="color-box"></div>
-                <div class="add-btn">
-                    <!-- Tutorials Button -->
-                    <img id="docsButton" src="{% static "images/add.png" %}">
-                    <p><small>Tutorials</small></p> 
-                </div>
-            </div>
-
-        </div>
+         
 
         <!-- Social Links -->
         <div class="social-links">
@@ -85,6 +70,23 @@
 
     <!-- JavaScript Code -->
     <script src="{% static "js/homepage.js" %}"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
 
 </body>
 </html>
