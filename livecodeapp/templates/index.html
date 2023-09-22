@@ -23,41 +23,9 @@
 
 <body>
 
-    <!-- Main Container -->
-    <div class="container">
-
-        <!-- Navigation Bar -->
-        <div class="navbar">
-
-            <!-- Logo Link -->
-            <a id="home" href="{% url "index" %}" style="text-decoration: none;">
-                <p class="logo">LiveCode</p>
-            </a>
-
-            <!-- Navigation Menu -->
-            <nav>
-                <ul id="menuList">
-                    <li><a href="{% url "tutorials" %}">Tutorials</a></li>
-                    <li><a href="{% url "about" %}">About</a></li>
-                    <li><a href="{% url "credits" %}">Credits</a></li>
-                </ul>
-            </nav>
-
-            <!-- Menu Icon -->
-            <img src="{% static "images/menu.png" %}" class="menu-icon" onclick="togglemenu()">
-
-        </div>
-        <!-- Main Information -->
-        <div class="row">
-
-            <!-- Left Column -->
-            <div class="col-1">
-                <h2>Live Code<br>Editor</h2>
-                <h3>Online web code editor</h3>
-                <p>css/html</p>
-                <h4>JavaScript</h4>
-                <button id="codeButton" type="button">Code Now<img src="{% static "images/arrow.png" %}"></button>
-         
+	<!-- Main Container -->
+	<div class="container">
+    
 
 		<!-- Footer Section -->
 		<footer class="tm-footer text-center">
@@ -65,9 +33,9 @@
             <p>Put social links here</p>
             
 		</footer>
-
+        
     </div>
-
+    
     <!-- JavaScript Code -->
     <script src="{% static "js/homepage.js" %}"></script>
     <script src="js/jquery.min.js"></script>
