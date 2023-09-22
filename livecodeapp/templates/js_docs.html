@@ -2,28 +2,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Code</title>
+    
+    <!-- Title of the Page -->
+    <title>JavaScript Tutorial</title>
+
+    <!-- Author: Fernando Arroliga -->
+    <!-- Creation Date: March 19, 2023 -->
 
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
 
     <!--Css Style-->
     <link rel="stylesheet" href="{% static "css/js_docs.css" %}">
+
 </head>
 <body>
 
-    <!--Header Section-->
+    <!--Header Title-->
     <div class="header">
         <h2>JavaScript Tutorial</h2>
     </div>
-      
+    
+    <!-- Main Container -->
     <div class="row">
+
+        <!-- Left Column -->
         <div class="leftcolumn">
 
             <!--Main content-->
             <div class="card">
+                <!-- content -->
                 <h2>A Basic Guide to JavaScript: From Fundamentals to Integration with HTML and CSS</h2>
                 <div class="fakeimg" style="height:200px;">Image</div>
                 <p>
@@ -83,45 +95,55 @@
                 </p>
 
             </div>
+
         </div>
+
+        <!-- Right Column -->
         <div class="rightcolumn">
 
-            <!--More information section-->
-            <div class="card">
-                <h2>More Information</h2>
+            <!-- More Information Section -->
+            <div class="card" style="background: #ba29da;">
+                <!-- content -->
+                <h3 style="color: white;">More Information</h3>
                 <p>If you want to know more about JavaScript, you can visit:</p>
                 <p>
-                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank">W3C Documentation</a>
+                    <a href="https://html.spec.whatwg.org/multipage/#toc-syntax" target="_blank" style="color: white;">W3C Documentation</a>
                 </p>
                 <p>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Documentation</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" style="color: white;">Mozilla Documentation</a>
                 </p>
 
             </div>
             
-            <!--More tutorials section-->
-            <div class="card">
+            <!-- More Tutorials Section -->
+            <div class="card" style="background: #ba29da; color: white;">
+                <!-- content -->
                 <h3>More Tutorials</h3>
-                <div class="fakeimg"><a href="{% url "html_docs" %}">Html tutorial</a></div><br>
-                <div class="fakeimg"><a href="{% url "css_docs" %}">Css tutorial</a></div><br>
+                <div class="fakeimg"><a href="{% url "html_docs" %}" style="color: black;">Html tutorial</a></div><br>
+                <div class="fakeimg"><a href="{% url "css_docs" %}" style="color: black;">Css tutorial</a></div><br>
             </div>
 
-            <!--Follow me section-->
-            <div class="card">
+            <!--Follow me Section-->
+            <div class="card" style="background: #ba29da; color: white;">
+                <!-- content -->
                 <h3>Follow Me</h3>
                 <p>
                     <a href="https://github.com/FernandoArroliga" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-arroliga-460073284" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                 </p>
+
             </div>
 
         </div>
+
     </div>
     
     <!--Footer Section-->
     <div class="footer">
         <p>&copy; 2023 Personal Website. All rights reserved.</p>
     </div>
+
 </body>
 
 </html>

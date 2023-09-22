@@ -49,32 +49,34 @@ body {
 }
 
 .back {
-    background-color: #ba29da;
+    background-color: #f4f4f4;
     transform: rotateY(180deg) rotateZ(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    color: #ba29da;
 }
 
 .back a {
     text-decoration: none;
-    color: white;
+    color: #454545;
 }
 
 .back a:hover {
     text-decoration: overline;
-    color: aqua;
+    color: #ba29da;
 }
 
 .front {
-    background-color: #ba29da;
+    background-color: #f4f4f4;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #ba29da;
 }
 
 /* Responsive Design Using Media Queries */
