@@ -1,49 +1,123 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 
-    <!-- Meta Information -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Information -->
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
-    <!-- Title of the Page -->
-    <title>Image Credits</title>
+	<!-- Title of the Page -->
+	<title>Image Credits</title>
+    
+	<!-- Google Font Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
 
-    <!-- Author: Fernando Arroliga -->
-    <!-- Creation Date: March 22, 2023 -->
-
-    <!--Font Awesone Link-->
-    <script src="https://kit.fontawesome.com/9a6f0fd7f8.js" crossorigin="anonymous"></script>
-
-    <!--Css Styles-->
-    <link rel="stylesheet" href="{% static "css/credits.css" %}">
+	<!-- Css Styles -->
+    <link href="{% static "css/all.min.css" %}" rel="stylesheet" />
+	<link href="{% static "css/style.css" %}" rel="stylesheet" />
 
 </head>
-<body>
 
-    <!-- Main Container -->
-    <div class="container">
+<body> 
 
-        <!-- Main Card -->
-        <div class="card">
+	<!-- Main Container -->
+	<div class="container">
 
-            <!-- Front Elements -->
-            <div class="front">
-                <h1>Image Credits</h1>
-            </div>
+		<!-- Header Section -->
+		<div class="placeholder">
 
-            <!-- Back Elements -->
-            <div class="back">
-                <h1>Link to the Images</h1>
-                <a target="_blank" href="https://www.freepik.com/free-vector/flat-design-content-management-system-illustrated_12065040.htm#query=open%20source%20cartoon&position=37&from_view=search&track=ais">Image 1</a>
-                <a target="_blank" href="https://www.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_10798281.htm">Image 2</a>
-            </div>
-            
-        </div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Online Code Editor</h1>
+								<h6 class="tm-site-description">for html, css and javascript</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="{% url "index" %}" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="{% url "coding" %}" class="tm-nav-link">Coding</a></li>
+								<li class="tm-nav-li"><a href="{% url "credits" %}" class="tm-nav-link active">Credits</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
 
-    </div>
+		</div>
+
+		<!--- Main Content -->
+		<main>
+
+			<!-- Header of the Main Content -->
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Image Attributions</h2>
+				<p class="col-12 text-center">In the links below you can find the image credtis</p>
+			</header>
+
+
+			<div class="tm-container-inner tm-featured-image">
+
+				<div class="row">
+
+					<div class="col-12">
+						<div class="placeholder-2">
+							<div class="parallax-window-2" data-parallax="scroll" data-image-src="img/about-05.jpg"></div>		
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="tm-container-inner tm-history">
+
+				<div class="row">
+
+					<div class="col-12">
+
+						<div class="tm-history-inner">
+							<!-- image -->
+							<!--<img src="img/about-06.jpg" alt="Image" class="img-fluid tm-history-img" />-->
+							<!-- content -->
+							<div class="tm-history-text"> 
+								<h4 class="tm-history-title">Background Image</h4>
+								<p class="tm-mb-p">Link to Image background</p>
+								<p><a href="https://templatemo.com/contact">Freepik</a></p>
+							</div>
+
+							<div class="tm-history-text">
+								<h4 class="tm-history-title">Image number 2</h4>
+								<p class="tm-mb-p">Link to the Image number two</p>
+								<p><a href="https://google.com">Freepik</a></p>
+							</div>
+						</div>	
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<!-- Footer Section -->
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023 Personal Blog 
+		</footer>
+
+	</div>
+
+	<!-- JavaScript Files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
 
 </body>
 </html>
-
